@@ -14,13 +14,13 @@ st.set_page_config(
     layout="wide"
 )
 
-# CSS para look más claro / institucional
+# CSS para look azul / institucional
 st.markdown(
     """
     <style>
-    /* Fondo general claro */
+    /* Fondo general azul oscuro */
     .stApp {
-        background-color: #f5f5f5 !important;
+        background: linear-gradient(180deg, #0f172a 0%, #020617 100%) !important;
     }
 
     /* Contenedor central tipo tarjeta grande */
@@ -28,7 +28,7 @@ st.markdown(
         background-color: #ffffff;
         padding: 20px 30px 30px 30px;
         border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.25);
         margin-bottom: 18px;
     }
 
@@ -36,11 +36,11 @@ st.markdown(
         font-size: 28px !important;
         font-weight: 800 !important;
         margin-bottom: 0px;
-        color: #1b3b5a !important;
+        color: #f9fafb !important;
     }
     .sub-title {
         font-size: 14px !important;
-        color: #555555 !important;
+        color: #e5e7eb !important;
         margin-top: 4px;
         margin-bottom: 0px;
     }
@@ -57,7 +57,7 @@ st.markdown(
         border-radius: 10px;
         padding: 12px 14px;
         border: 1px solid #e0e0e0;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        box-shadow: 0 1px 4px rgba(0,0,0,0.10);
     }
     .metric-label {
         font-size: 12px;
@@ -76,7 +76,7 @@ st.markdown(
     .section-title {
         font-size: 18px;
         font-weight: 700;
-        color: #1b3b5a;
+        color: #f9fafb;
         margin-top: 10px;
         margin-bottom: 4px;
     }
@@ -86,7 +86,7 @@ st.markdown(
         border-radius: 10px;
         padding: 12px 14px;
         border: 1px solid #e0e0e0;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+        box-shadow: 0 1px 4px rgba(0,0,0,0.10);
         font-size: 13px;
         color: #444444;
         height: 100%;
@@ -98,9 +98,15 @@ st.markdown(
         color: #1b3b5a;
     }
 
-    /* Sidebar más claro */
+    /* Sidebar más oscuro pero legible */
     section[data-testid="stSidebar"] {
-        background-color: #f0f2f6 !important;
+        background-color: #020617 !important;
+        color: #e5e7eb !important;
+    }
+    section[data-testid="stSidebar"] label,
+    section[data-testid="stSidebar"] p,
+    section[data-testid="stSidebar"] span {
+        color: #e5e7eb !important;
     }
     </style>
     """,
